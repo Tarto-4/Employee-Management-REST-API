@@ -45,7 +45,7 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-devtools</artifactId>
-            <version>3.2.0</version> <!-- ✅ Explicit version added -->
+            <version>2.7.0</version> <!-- ✅ Explicit version added -->
             <scope>runtime</scope>
             <optional>true</optional>
         </dependency>
