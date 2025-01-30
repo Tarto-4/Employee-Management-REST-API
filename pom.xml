@@ -12,7 +12,7 @@
     <name>Employee Management REST API</name>
     <description>A REST API for managing employees using Spring Boot</description>
 
-    <!-- Parent Spring Boot dependency -->
+    <!-- Spring Boot Parent -->
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
@@ -21,30 +21,31 @@
     </parent>
 
     <dependencies>
-        <!-- Spring Boot Starter Web (REST API support) -->
+        <!-- Spring Boot Starter Web -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
-        <!-- Lombok (for reducing boilerplate code) -->
+        <!-- Lombok -->
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <scope>provided</scope>
         </dependency>
 
-        <!-- Spring Boot Starter Test (for unit testing with JUnit and Mockito) -->
+        <!-- Spring Boot Starter Test -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
 
-        <!-- Spring Boot DevTools (for hot reload in development) -->
+        <!-- Spring Boot DevTools (Explicit Version Added) -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-devtools</artifactId>
+            <version>3.2.0</version> <!-- ✅ Explicit version added -->
             <scope>runtime</scope>
             <optional>true</optional>
         </dependency>
