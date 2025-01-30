@@ -1,5 +1,3 @@
-package com.example.employees;
-
 public class Employee {
     private String employee_id;
     private String first_name;
