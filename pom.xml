@@ -40,20 +40,7 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
-
-        <!-- Spring Boot DevTools -->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-devtools</artifactId>
-            <version>3.2.0</version> <!-- Explicit version added -->
-            <scope>runtime</scope>
-            <optional>true</optional>
-        </dependency>
     </dependencies>
-
-    <repositories>
-        <!-- Removed spring-milestones repository -->
-    </repositories>
 
     <build>
         <plugins>
@@ -76,3 +63,4 @@
         </plugins>
     </build>
 </project>
+
