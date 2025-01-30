@@ -4,7 +4,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-@RequestMapping("/employees")
+@RequestMapping("/employees") // Base URL for all employee-related requests
 public class EmployeeController {
     private final EmployeeManager employeeManager = new EmployeeManager();
 
