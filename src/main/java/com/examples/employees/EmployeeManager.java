@@ -1,22 +1,17 @@
-package com.example.employees;
+import java.util.ArrayList;
+import java.util.List;
 
-import org.springframework.stereotype.Component;
-import java.util.Arrays;
-
-@Component
 public class EmployeeManager {
-    private Employees employees;
+    private List<Employee> employees = new ArrayList<>();
 
     public EmployeeManager() {
-        employees = new Employees();
-        employees.setEmployeeList(Arrays.asList(
-            new Employee("E001", "Alice", "Johnson", "alice.johnson@example.com", "Software Engineer"),
-            new Employee("E002", "Bob", "Smith", "bob.smith@example.com", "Product Manager"),
-            new Employee("E003", "Charlie", "Brown", "charlie.brown@example.com", "Data Analyst")
-        ));
+        // Hardcoded Employee Data
+        employees.add(new Employee("E001", "John", "Doe", "john.doe@example.com", "Software Engineer"));
+        employees.add(new Employee("E002", "Jane", "Smith", "jane.smith@example.com", "Product Manager"));
+        employees.add(new Employee("E003", "Alice", "Brown", "alice.brown@example.com", "HR Manager"));
     }
 
-    public Employees getEmployees() {
+    public List<Employee> getEmployees() {
         return employees;
     }
 }
