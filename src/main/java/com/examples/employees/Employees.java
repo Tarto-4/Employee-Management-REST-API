@@ -1,20 +1,18 @@
-package com.example.employees;
+package com.example.employees;  // Ensure package name is correct
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class Employees {
-    private List<Employee> employeeList;
+    private List<Employee> employees = new ArrayList<>();
 
     public Employees() {
-        this.employeeList = new ArrayList<>();
+        employees.add(new Employee("E001", "John", "Doe", "john.doe@example.com", "Software Engineer"));
+        employees.add(new Employee("E002", "Jane", "Smith", "jane.smith@example.com", "Product Manager"));
+        employees.add(new Employee("E003", "Alice", "Brown", "alice.brown@example.com", "HR Manager"));
     }
 
-    public List<Employee> getEmployeeList() {
-        return employeeList;
-    }
-
-    public void setEmployeeList(List<Employee> employeeList) {
-        this.employeeList = employeeList;
+    public List<Employee> getEmployees() {
+        return employees;
     }
 }
